@@ -3,7 +3,7 @@
 This adblock filterlist aims to remove paid elements and payment options from the in-browser discord client.
 
 ## Usage
-To use, import this URL to your filterlists on uBlockOrigin:
+To use, import this URL to your filterlists on uBlock Origin:
 
 ```https://raw.githubusercontent.com/Dark-Dragon/freeify-discord/main/freeify-discord```
 
