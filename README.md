@@ -1,4 +1,4 @@
-# freeify-discord
+# Freeify Discord
 ## Purpose
 This adblock filterlist aims to remove paid elements and payment options from the in-browser discord client.
 
