@@ -30,3 +30,6 @@ discord.com##.scrollerBase__2b744.thin__62e51.scroller__750f5 > div:nth-of-type(
 
 !removes server boost progress bar
 discord.com##.containerWithMargin__7d380.container__4f639
+
+!removes nitro button on profiles of nitro users
+discord.com##.premiumIconWrapper__83620
