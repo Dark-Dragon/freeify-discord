@@ -33,3 +33,10 @@ discord.com##.containerWithMargin__7d380.container__4f639
 
 !removes nitro button on profiles of nitro users
 discord.com##.premiumIconWrapper__83620
+
+!removes try out nitro box in profile settings
+discord.com##.tryItOutSection__0f9fb.featureBorder_a44f20.premiumFeatureBorder__9bbb3
+
+!removes try out nitro box in appearance settings
+discord.com##.featureBorder__1eaf9.featureBorder_a44f20.premiumFeatureBorder__9bbb3
+discord.com##.selectionGroup__36139
