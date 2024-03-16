@@ -25,8 +25,7 @@ discord.com##.premiumEmoji__2dbd7
 discord.com##.upsellContainer__3c02a
 
 !removes server boost button in server context menu
-discord.com##.scrollerBase__2b744.thin__62e51.scroller__750f5 > div:nth-of-type(1)
-discord.com##.scrollerBase__2b744.thin__62e51.scroller__750f5 > div:nth-of-type(2)
+discord.com##.scrollerBase__2b744.thin__62e51.scroller__750f5 > div[role="group"]:has(div:has-text(Server Boost))
 
 !removes server boost progress bar
 discord.com##.containerWithMargin__7d380.container__4f639
@@ -36,6 +35,12 @@ discord.com##.premiumIconWrapper__83620
 
 !removes try out nitro box in profile settings
 discord.com##.tryItOutSection__0f9fb.featureBorder_a44f20.premiumFeatureBorder__9bbb3
+
+!removes go to shop reminder in profile settings
+discord.com##.container_d6bff4
+
+!removes unlock with nitro box in server profile settings
+discord.com##.upsellOverlayContainer__08979
 
 !removes try out nitro box in appearance settings
 discord.com##.featureBorder__1eaf9.featureBorder_a44f20.premiumFeatureBorder__9bbb3
