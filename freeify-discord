@@ -20,3 +20,13 @@ discord.com##.burstReactionTooltipPrompt__069e3
 discord.com##.nitroTopDividerContainer__4c8fd
 discord.com##.premiumHeader_f78f97
 discord.com##.premiumEmoji__2dbd7
+
+!removes 'unlock these with nitro' pop-up in emote/reactions selection
+discord.com##.upsellContainer__3c02a
+
+!removes server boost button in server context menu
+discord.com##.scrollerBase__2b744.thin__62e51.scroller__750f5 > div:nth-of-type(1)
+discord.com##.scrollerBase__2b744.thin__62e51.scroller__750f5 > div:nth-of-type(2)
+
+!removes server boost progress bar
+discord.com##.containerWithMargin__7d380.container__4f639
