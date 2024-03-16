@@ -1,6 +1,6 @@
 # Freeify Discord
 ## Purpose
-This adblock filterlist aims to remove paid elements and payment options from the in-browser discord client.
+This adblock filterlist aims to remove paid elements, payment options and pay reminders (shop, nitro, super, etc) from the in-browser discord client.
 
 ## Usage
 To use, import this URL to your filterlists on uBlock Origin:
