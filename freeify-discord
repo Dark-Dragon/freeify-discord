@@ -41,6 +41,13 @@ discord.com##div[class^="premiumIconWrapper"]
 !removes nitro emotes when searching emote names upon first time collapsing the menu because I can't figure out how to force it to collapse. related issue https://github.com/Dark-Dragon/freeify-discord/issues/1
 discord.com##div[class*="categorySectionNitroLocked"][class*="categorySectionCollapsed"]:has( > div > div > span:has-text(Available with Nitro))
 
+! removes nitro reminder when typing messages surpassing the free user character limit
+discord.com##div[class*="upsell"]:has( > div:has-text(Send longer messages with))
+
+! removes nitro reminder when attempting to send files surpassing the free user file size limit
+discord.com##div[class^="body"]:has(span:has-text(The max file size is)) > div[class^="defaultColor"]:has-text(Upgrade to Discord Nitro)
+discord.com##div[class^="primaryActions"]:has( > button > div[class*="premiumSubscribeButton"])
+
 
 
 ! SETTINGS PAGES ---
