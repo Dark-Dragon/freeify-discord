@@ -57,5 +57,3 @@ discord.com##div[class^="upsellOverlayContainer"]
 ! removes try out nitro box in appearance settings
 discord.com##div[class^="premiumFeatureBorder"]
 discord.com##div[class^="selectionGroup"]:has( > div > div > div > div > div[class^="tryItOutButtons"])
-!removes nitro emotes when searching emote names upon first time collapsing the menu because I can't figure out how to force it to collapse. related issue https://github.com/Dark-Dragon/freeify-discord/issues/1
-discord.com##div.categorySection_f44c2f.categorySectionLast__3bfde.categorySectionCollapsed__46c33.categorySectionNitroLocked_cf3b81.categorySectionNitroDivider_dc0d8b
