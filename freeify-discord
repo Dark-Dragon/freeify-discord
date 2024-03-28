@@ -3,48 +3,59 @@
 ! Homepage: https://github.com/Dark-Dragon/freeify-discord/
 ! License: https://raw.githubusercontent.com/Dark-Dragon/freeify-discord/main/LICENSE
 
-! removes nitro and shop button above direct messages list
-discord.com##li.container__8759a.channel_c21703:has(div > a > div > div > div > div:has-text(Nitro))
-discord.com##li.container__8759a.channel_c21703:has(div > a > div > div > div > div:has-text(Shop))
+
+
+! MAIN SECTION ---
+
+! removes 'nitro' and 'shop' button above direct messages list
+discord.com##li[role="listitem"]:has( > div > a > div > div > div > div:has-text(Nitro))
+discord.com##li[role="listitem"]:has( > div > a > div > div > div > div:has-text(Shop))
 
 ! removes 'send gift' button within text input
 discord.com##button[aria-label="Send a gift"]
 
 ! removes 'enable super reactions' button in reactions pop-up
-discord.com##.burstToggle__5e176
+discord.com##div[aria-label="Enable Super Reactions"]
 
 ! removes 'unlock with nitro'-prompt when hovering a super reaction
-discord.com##.burstReactionTooltipPrompt__069e3
+discord.com##div[class^="burstReactionTooltipPrompt"]
 
 ! removes nitro only autocomplete emotes
-discord.com##.nitroTopDividerContainer__4c8fd
-discord.com##.premiumHeader_f78f97
-discord.com##.premiumEmoji__2dbd7
+discord.com##div[class^="nitroTopDividerContainer"]
+discord.com##div[class^="premiumHeader"]
+discord.com##div[class*="premiumEmoji"]
 
-!removes 'unlock these with nitro' pop-up in emote/reactions selection
-discord.com##.upsellContainer__3c02a
+! removes 'unlock these with nitro' pop-up in emote/reactions selection
+discord.com##div[class^="upsellContainer"]
 
-!removes server boost button in server context menu
-discord.com##.scrollerBase__2b744.thin__62e51.scroller__750f5 > div[role="group"]:has(div:has-text(Server Boost))
+! removes server boost progress bar (alt in case first rule stops working)
+discord.com##div[class^="container"][aria-label*="Boost"]
+!discord.com##div[class^="container"]:has( > div[class^="progressBarContainer"])
 
-!removes server boost progress bar
-discord.com##.containerWithMargin__7d380.container__4f639
+! removes 'server boost' button in server context menu
+discord.com##div[role="group"]:has( > div:has-text(Server Boost))
 
-!removes nitro button on profiles of nitro users
-discord.com##.premiumIconWrapper__83620
+! removes nitro button on mini-profiles of nitro users
+discord.com##div[class^="premiumIconWrapper"]
 
-!removes try out nitro box in profile settings
-discord.com##.tryItOutSection__0f9fb.featureBorder_a44f20.premiumFeatureBorder__9bbb3
+!removes nitro emotes when searching emote names upon first time collapsing the menu because I can't figure out how to force it to collapse. related issue https://github.com/Dark-Dragon/freeify-discord/issues/1
+discord.com##div[class*="categorySectionNitroLocked"][class*="categorySectionCollapsed"]:has( > div > div > span:has-text(Available with Nitro))
 
-!removes go to shop reminder in profile settings
-discord.com##.container_d6bff4
 
-!removes unlock with nitro box in server profile settings
-discord.com##.upsellOverlayContainer__08979
 
-!removes try out nitro box in appearance settings
-discord.com##.featureBorder__1eaf9.featureBorder_a44f20.premiumFeatureBorder__9bbb3
-discord.com##.selectionGroup__36139
+! SETTINGS PAGES ---
 
+! removes valorant ad in profile settings (let me know if this filter doesn't work, file name might by dynamic)
+discord.com##div[style*="/assets/18cd49d1a67489a3b13c.png"]
+
+! removes try out nitro box in profile settings
+discord.com##div[class*="tryItOutSection"]
+
+! removes unlock with nitro box in server profile settings
+discord.com##div[class^="upsellOverlayContainer"]
+
+! removes try out nitro box in appearance settings
+discord.com##div[class^="premiumFeatureBorder"]
+discord.com##div[class^="selectionGroup"]:has( > div > div > div > div > div[class^="tryItOutButtons"])
 !removes nitro emotes when searching emote names upon first time collapsing the menu because I can't figure out how to force it to collapse. related issue https://github.com/Dark-Dragon/freeify-discord/issues/1
 discord.com##div.categorySection_f44c2f.categorySectionLast__3bfde.categorySectionCollapsed__46c33.categorySectionNitroLocked_cf3b81.categorySectionNitroDivider_dc0d8b
