@@ -28,9 +28,8 @@ discord.com##div[class*="premiumEmoji"]
 ! removes 'unlock these with nitro' pop-up in emote/reactions selection
 discord.com##div[class^="upsellContainer"]
 
-! removes server boost progress bar (alt in case first rule stops working)
-discord.com##div[class^="container"][aria-label*="Boost"]
-!discord.com##div[class^="container"]:has( > div[class^="progressBarContainer"])
+! removes server boost progress bar
+discord.com##li:has(div[data-list-item-id^="channels___boosts"])
 
 ! removes 'server boost' button in server context menu
 discord.com##div[role="group"]:has( > div:has-text(Server Boost))
